@@ -1,0 +1,14 @@
+.footer-div {
+	background-color: var(--common-color);
+    padding: 17px 30px;
+    width: 100%;   
+    margin-top: auto; 
+}
+.footer-div h5 {
+	font-size: 16px;
+	font-weight: normal;
+	color: var(--white-color);
+	text-align: center;
+	margin: 0;
+}
+

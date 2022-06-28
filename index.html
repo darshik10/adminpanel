@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Admin Panel</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+        <link rel="stylesheet" type="text/css" href="css/header.css" />
+        <link rel="stylesheet" type="text/css" href="css/body-content.css" />
+        <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="dashboard-main-div">
+
+                <!-- Sidebar -->
+
+                <div class="main-div-left-side">
+                    <div class="sidebar-main-div" id="sidebar">
+                        <div class="logo-main-div common-padding">
+                            <div class="logo">
+                                <a href="#"> Logo </a>
+                            </div>
+                            <div onclick="myFunction()" class="toggle-icon" id="close-sidebar">
+                                <i class="fas fa-align-left"></i>
+                            </div>
+                        </div>
+
+                        <div class="user-profile">
+                            <div class="user-img">
+                                <img src="images/profile.png" />
+                            </div>
+                            <div class="user-details">
+                                <h5 class="description">Admin Name</h5>
+                                <p class="small-text">ui/ux designer</p>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-menu">
+                            <ul class="menu-list">
+                                <li class="sidebar-menu-item active">
+                                    <a href="">
+                                        <i class="fas fa-th-large"></i>
+                                        <span> Dashboard </span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="">
+                                        <i class="fas fa-user-circle"></i>
+                                        <span>User </span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="">
+                                        <i class="fas fa-cart-plus"></i>
+                                        <span>Product</span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="">
+                                        <i class="fas fa-file-alt"></i>
+                                        <span>Blog </span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="">
+                                        <i class="fas fa-user-lock"></i>
+                                        <span>Login</span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="">
+                                        <i class="fas fa-user-plus"></i>
+                                        <span>Register</span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu-item">
+                                    <a href="">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <span> Not Found </span>
+                                        <i class="fas fa-angle-right right-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="sidebar-menu-item logout-btn">
+                                <a href=""> <i class="fas fa-power-off"></i> <span> Logout </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-div-right-side">
+                
+                        <!-- header -->
+
+                        <div class="header d-flex align-items-center justify-content-between">
+                            
+                            <div class="main-header-left d-flex align-items-center">
+                                <div onclick="myFunction()" class="toggle-icon" id="open-sidebar">
+                                     <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="searchbar-div">
+                                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                                    <input class="" type="search" placeholder="Search" aria-label="Search" />
+                                </div>
+                            </div>
+                            <div class="main-header-right">
+                                <ul class="list-unstyled d-flex align-items-center m-0">
+                                    <li>
+                                        <a href=""><i class="fas fa-sun"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fas fa-calendar-alt"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fas fa-envelope-open"></i></a>
+                                        <div class="notification-badge">
+                                          <div class="circle pulse-effects badge-color"></div>
+                                      </div>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fas fa-bell"></i></a>
+                                        <div class="notification-badge">
+                                          <div class="circle pulse-effects badge-color"></div>
+                                      </div>
+                                    </li>
+                                    <li class="user-profile-dropdown">
+                                        <div class="user-profile-img dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="false">
+                                            <img src="images/profile.png" />
+                                            <span> Admin Name </span>
+                                            <i class="fas fa-chevron-down ml-1"></i>
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <button class="dropdown-item" type="button">Action</button>
+                                            <button class="dropdown-item" type="button">Another action</button>
+                                            <button class="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- body-content  -->
+
+                        <div class="body-content">
+                           
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        <!-- <h5>Take the hassle out of icons in your website.</h5> -->
+                                    </div>
+                                </div>  
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>    
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>    
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>    
+                                <div class="col-md-6">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>    
+                                <div class="col-md-6">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>     
+                                <div class="col-md-6">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>     
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>     
+                                <div class="col-md-3">
+                                    <div class="box">
+                                        
+                                    </div>
+                                </div>                          
+                                
+                            </div>
+                        </div>
+
+                         <!-- footer -->
+                         
+                        <div class="footer-div">
+                            <h5> Copyright © 2022 XYZ. Designed by ABC All rights reserved. </h5>
+                        </div>
+                </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#close-sidebar").click(function () {
+            $("#sidebar").hide();
+            $("#open-sidebar").css("display", "block");
+            $(".dashboard-main-div").addClass("full-width");
+        });
+        $("#open-sidebar").click(function () {
+            $("#sidebar").show();
+            $("#open-sidebar").css("display", "none");
+            $(".dashboard-main-div").removeClass("full-width");
+        });
+    });
+
+    $(window).resize(function () {
+        if ($(this).width() < 991) {
+            $("#mobile-open-sidebar-icon").click(function () {
+                $("#sidebar").css("display", "block");
+            });
+        }
+    });
+
+</script>
